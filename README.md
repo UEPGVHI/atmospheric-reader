@@ -1,4 +1,4 @@
-# Atmospheric Document & Web Reader
+﻿# Atmospheric Document & Web Reader
 
 Read live web pages, PDFs, `.txt` and `.md` files over a custom wallpaper (image or video) with looping background music.
 Presets, called **atmospheres**, bundle **content + background + music** under one name.
@@ -8,7 +8,7 @@ Presets, called **atmospheres**, bundle **content + background + music** under o
 You need [Python](https://www.python.org/downloads/) 3.9–3.13 (PySide6 6.9 is the tested version).
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/atmospheric-reader.git
+git clone https://github.com/UEPGVHI/atmospheric-reader.git
 cd atmospheric-reader
 python -m venv .venv
 .venv\Scripts\activate          # macOS/Linux: source .venv/bin/activate
@@ -119,3 +119,4 @@ reader/glass.py         wallpaper canvas, glass panels, scroll rail
 reader/icons.py         in-app SVG icons (rendered at the exact pixel size)
 icon.svg / icon.ico     app icon
 ```
+
