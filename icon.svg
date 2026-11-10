@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#596073"/><stop offset="1" stop-color="#262a37"/>
+    </linearGradient>
+    <linearGradient id="rim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f6f8fc"/><stop offset="0.55" stop-color="#9aa3b3"/><stop offset="1" stop-color="#6d7585"/>
+    </linearGradient>
+    <linearGradient id="page" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fbfcfe"/><stop offset="1" stop-color="#aab2c0"/>
+    </linearGradient>
+    <linearGradient id="cover" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8f98a9"/><stop offset="1" stop-color="#596172"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.34"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.34"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="tileclip"><rect x="14" y="14" width="228" height="228" rx="58"/></clipPath>
+  </defs>
+  <!-- frosted glass tile -->
+  <rect x="14" y="14" width="228" height="228" rx="58" fill="url(#tile)"/>
+  <g clip-path="url(#tileclip)">
+    <circle cx="128" cy="120" r="104" fill="url(#halo)"/>
+    <rect x="14" y="14" width="228" height="118" fill="url(#sheen)"/>
+  </g>
+  <rect x="15.5" y="15.5" width="225" height="225" rx="56.5" fill="none" stroke="url(#rim)" stroke-width="3"/>
+  <!-- open book -->
+  <path d="M44 100v88c30-8 58-4 84 12 26-16 54-20 84-12v-88" fill="url(#cover)" stroke="#d9deea" stroke-opacity="0.55" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M122 98C103 83 79 79 52 87v88c27-8 51-4 70 14Z" fill="url(#page)"/>
+  <path d="M134 98c19-15 43-19 70-11v88c-27-8-51-4-70 14Z" fill="url(#page)"/>
+  <path d="M128 100v90" stroke="#7b8394" stroke-opacity="0.55" stroke-width="2.5" stroke-linecap="round"/>
+  <g stroke="#7f8797" stroke-opacity="0.55" stroke-width="4.5" stroke-linecap="round">
+    <path d="M69 114c12-3 24-2 36 3"/><path d="M69 134c12-3 24-2 36 3"/><path d="M69 154c12-3 24-2 36 3"/>
+    <path d="M187 114c-12-3-24-2-36 3"/><path d="M187 134c-12-3-24-2-36 3"/><path d="M187 154c-12-3-24-2-36 3"/>
+  </g>
+  <!-- little spark: the "atmosphere" -->
+  <path d="M190 40c1.6 11 5 14.4 16 16-11 1.6-14.4 5-16 16-1.6-11-5-14.4-16-16 11-1.6 14.4-5 16-16Z" fill="#f4f6fb"/>
+</svg>
